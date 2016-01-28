@@ -1,0 +1,88 @@
+<ion-view style="" title="Molino">
+    <ion-content class="has-header" overflow-scroll="true" padding="true">
+      <div id="scene">
+        <img class="blades" src="http://www.dwuser.com/education/content/creating-keyframe-animations-with-css3/images/blades.png" width="120" height="120"/>
+        <img class="stand" src="http://www.dwuser.com/education/content/creating-keyframe-animations-with-css3/images/stand.png" width="12" height="130"/>
+      </div>
+      <div class="turbine">
+      <style type="text/css">
+
+        /* Container properties */
+        #scene {
+           width: 100%;
+           height: 300px;
+           position: relative;
+           overflow: hidden;
+           /* Solid fallback for old browsers */
+           background: #0099ff;
+           /* Firefox */
+           background: -moz-linear-gradient(top, #0099ff, #00ccff);
+           /* WebKit - Chrome and Safari */
+           background: -webkit-linear-gradient(top, #0099ff, #00ccff);
+           /* Internet Explorer 10 */
+           background: -ms-linear-gradient(top, #0099ff, #00ccff);
+           /* Opera */
+           background: -o-linear-gradient(top, #0099ff, #00ccff);
+           /* general syntax */
+           background: linear-gradient(top, #0099ff, #00ccff);
+        }
+
+        /* Image Properties */
+
+        .blades {
+           /*image is 120 x 120 px*/
+           position: absolute;
+           top: 116px;
+           left: 132px;
+        }
+
+        .stand {
+           /*image is 12 x 130 px*/
+           position: absolute;
+           top: 170px;
+           left: 186px;
+        }
+        /* Keyframe animations */
+
+        /* Blades Spinning */
+
+        .blades{
+            -moz-animation:.6s rotateRight infinite linear;
+            -webkit-animation:.6s rotateRight infinite linear;
+        }
+
+        @-moz-keyframes rotateRight{
+            0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
+            100%{ -moz-transform:rotate(360deg); }
+        }
+
+        @-webkit-keyframes rotateRight{
+            0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
+            100%{ -webkit-transform:rotate(360deg); }
+        }
+      </style>
+      </div>
+        <form style="" class="list">
+            <ion-item style="" class="range range-positive">Velocidad
+                <input max="100" min="0" value="0" type="range">
+            </ion-item>
+        </form>
+      <div id="table">
+        <div class="row responsive-md">
+          <div class="col">Velocidad: </div>
+          <div class="col">Producción: </div>
+          <div class="col">Estado: </div>
+        </div>
+    <!--    <div class="row">
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+        </div>
+        <div class="row">
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+          <div class="col">.col</div>
+        </div> -->
+      </div>
+    </ion-content>
+</ion-view>
