@@ -1,64 +1,46 @@
 <ion-view style="" title="Molino">
     <ion-content class="has-header" overflow-scroll="true" padding="true">
       <div id="scene">
-        <img class="blades" src="http://www.dwuser.com/education/content/creating-keyframe-animations-with-css3/images/blades.png" width="120" height="120"/>
-        <img class="stand" src="http://www.dwuser.com/education/content/creating-keyframe-animations-with-css3/images/stand.png" width="12" height="130"/>
+        <svg class="windmill-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+          <g transform="translate(0,-952.36217)">
+            <g id="rotor" >
+              <path style="" d="m 52.032964,981.03514 c -1.255809,0.0277 -2.456062,0.72451 -3.071613,1.91975 -0.895349,1.73855 -0.212098,3.8744 1.526442,4.76975 1.738541,0.89534 3.874394,0.21209 4.769741,-1.52645 0.895349,-1.73854 0.212099,-3.87439 -1.526442,-4.76974 -0.543294,-0.27979 -1.127305,-0.40591 -1.698128,-0.39331 z"
+              fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+              <path style="" d="m 56.334032,984.98211 c -0.04983,0.52212 -0.197859,1.04165 -0.452665,1.53642 -0.235879,0.45802 -0.543385,0.85701 -0.902025,1.18618 1.155573,1.33508 3.100732,3.52774 3.660967,3.81626 0.776522,0.39991 11.183654,3.80654 14.660386,4.60925 2.124798,0.49057 7.324796,1.52986 7.794423,0.51214 0.07685,-0.16654 0.02896,-0.38934 -0.181727,-0.67735 -0.588843,-0.80495 -5.351732,-3.30398 -5.65996,-3.46272 -11.276895,-5.95922 -16.673816,-7.27268 -18.919399,-7.52018 z"
+              fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+              <path style="" d="m 48.100161,953.54009 c -0.182674,0.0167 -0.35154,0.17246 -0.495619,0.49892 -0.402687,0.91243 -0.188457,6.28177 -0.171813,6.62807 0.470537,12.55703 1.99393,17.91869 2.907627,20.05272 0.955097,-0.43748 2.060996,-0.51848 3.10257,-0.17182 0.580003,-1.67633 1.476988,-4.37943 1.447205,-4.99913 -0.04193,-0.87245 -2.290657,-11.59173 -3.333859,-15.00402 -0.637549,-2.08542 -2.339769,-7.10702 -3.456111,-7.00474 z"
+              fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+              <path style="" d="m 47.908522,985.18366 c -1.716128,0.32806 -4.713996,0.93611 -5.256858,1.28531 -0.734592,0.47253 -8.892997,7.78187 -11.326528,10.39146 -1.730618,1.85582 -6.183724,6.94777 -3.660966,6.67437 0.991531,-0.1075 5.536887,-2.9778 5.828469,-3.1654 10.611197,-6.66826 14.501935,-10.66451 15.902737,-12.52922 -0.819752,-0.68079 -1.33845,-1.63622 -1.486854,-2.65652 z"
+              fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+            </g>
+            <g id="stick">
+              <path style="" d="m 50.751702,993.03361 2.605442,0 1.172837,58.64579 -5.286594,0 z" fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+              <path style="" d="m 50.755774,988.66999 0,2.99716 2.642451,0 0,-2.98178 c -0.851509,0.19175 -1.762006,0.19601 -2.642451,-0.0154 z" fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+              <path style="" d="m 50.102459,991.89764 c -0.07744,0 -0.138774,0.1601 -0.138774,0.35684 l 0,0.19164 c 0,0.19675 0.06134,0.35685 0.138774,0.35685 l 3.951729,0 c 0.07743,0 0.138773,-0.1601 0.138773,-0.35685 l 0,-0.19164 c 0,-0.19674 -0.06134,-0.35684 -0.138773,-0.35684 l -3.951729,0 z m 3.9286,0.0463 0.0099,0 c 0.0022,0 0.07599,0.14429 0.07599,0.3205 l 0,0.17181 c 0,0.1762 -0.07053,0.3172 -0.07269,0.3172 l -0.01322,0 c 0.01737,-0.075 0.03635,-0.17784 0.03635,-0.29077 l 0,-0.22798 c 0,-0.11431 -0.01817,-0.21549 -0.03635,-0.29076 z"
+              fill="#000000" fill-opacity="1" fill-rule="evenodd" stroke="none" />
+            </g>
+          </g>
+        </svg>
+
       </div>
       <div class="turbine">
       <style type="text/css">
-
-        /* Container properties */
-        #scene {
-           width: 100%;
-           height: 300px;
-           position: relative;
-           overflow: hidden;
-           /* Solid fallback for old browsers */
-           background: #0099ff;
-           /* Firefox */
-           background: -moz-linear-gradient(top, #0099ff, #00ccff);
-           /* WebKit - Chrome and Safari */
-           background: -webkit-linear-gradient(top, #0099ff, #00ccff);
-           /* Internet Explorer 10 */
-           background: -ms-linear-gradient(top, #0099ff, #00ccff);
-           /* Opera */
-           background: -o-linear-gradient(top, #0099ff, #00ccff);
-           /* general syntax */
-           background: linear-gradient(top, #0099ff, #00ccff);
-        }
-
-        /* Image Properties */
-
-        .blades {
-           /*image is 120 x 120 px*/
-           position: absolute;
-           top: 116px;
-           left: 132px;
-        }
-
-        .stand {
-           /*image is 12 x 130 px*/
-           position: absolute;
-           top: 170px;
-           left: 186px;
-        }
-        /* Keyframe animations */
-
         /* Blades Spinning */
 
-        .blades{
-            -moz-animation:.6s rotateRight infinite linear;
-            -webkit-animation:.6s rotateRight infinite linear;
+        .windmill-icon #rotor {
+          transform-origin: 52.11px 984.6px;
+          -moz-animation: 2s rotateRight infinite linear;
+          -webkit-animation: 3s rotateRight infinite linear;
         }
 
-        @-moz-keyframes rotateRight{
-            0%{ -moz-transform:rotate(0deg); -moz-transform-origin:50% 50%; }
-            100%{ -moz-transform:rotate(360deg); }
+        @-moz-keyframes rotateRight {
+          0% {-moz-transform: rotate(0deg);}
+          100% {-moz-transform: rotate(360deg);}
         }
 
-        @-webkit-keyframes rotateRight{
-            0%{ -webkit-transform:rotate(0deg); -webkit-transform-origin:50% 50%; }
-            100%{ -webkit-transform:rotate(360deg); }
+        @-webkit-keyframes rotateRight {
+          0% {-webkit-transform: rotate(0deg);}
+          100% {-webkit-transform: rotate(360deg);}
         }
       </style>
       </div>
@@ -73,16 +55,6 @@
           <div class="col">Producción: </div>
           <div class="col">Estado: </div>
         </div>
-    <!--    <div class="row">
-          <div class="col">.col</div>
-          <div class="col">.col</div>
-          <div class="col">.col</div>
-        </div>
-        <div class="row">
-          <div class="col">.col</div>
-          <div class="col">.col</div>
-          <div class="col">.col</div>
-        </div> -->
       </div>
     </ion-content>
 </ion-view>
